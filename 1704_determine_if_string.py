@@ -5,8 +5,7 @@ def halvesAreAlike(s):
         vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
         l = int(len(s)/2)
         a, b = s[0:l], s[l:]
-        count_a = 0
-        count_b = 0
+        count_a, count_b = 0, 0
         
         for i in a:
             if i in vowels:
