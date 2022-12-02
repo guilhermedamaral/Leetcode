@@ -1,14 +1,12 @@
+# Runtime 45 ms | Beats 80.65% | Memory 13.8 MB | Beats 77.84%
 
 def halvesAreAlike(s):
     if len(s)%2 == 0:
         vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
         l = int(len(s)/2)
-        a = (s[0:l])
-        b = s[l:]
+        a, b = s[0:l], s[l:]
         count_a = 0
         count_b = 0
-        print(a)
-        print(b)
         
         for i in a:
             if i in vowels:
@@ -18,7 +16,6 @@ def halvesAreAlike(s):
             if i in vowels:
                 count_b += 1
             
-
         if count_a == count_b:
             print(True)
             return(True)
